@@ -29,3 +29,5 @@ def create_user():
     User.save(data)
     # Don't forget to redirect after saving to the database. We do not render_templates on a post method
     return redirect('/users')
+
+
