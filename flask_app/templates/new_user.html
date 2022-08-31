@@ -11,12 +11,18 @@
     <h1>Add a New User</h1>
     <!-- We need a method to handle the submission of our form. -->
     <form action="/create_user" method="POST">
-        <label for="fname">First Name:</label>
-        <input type="text" name="fname"><br> <!--the attribue name matches the data dictionary key in the method and the SQL VALUE variable names in the query-->
-        <label for="lname">Last Name:</label>
-        <input type="text" name="lname"><br>
-        <label for="uemail" >Email:</label>
-        <input type="text" name="uemail"><br>
+        <div class="form-group">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname"><!--the attribue name matches the data dictionary key in the method and the SQL VALUE variable names in the query-->
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname">
+        </div>
+        <div class="form-group">
+            <label for="uemail" >Email:</label>
+            <input type="text" name="uemail"><br>
+        </div>
         <input type="submit" value="Add User">
     </form> 
 </body>

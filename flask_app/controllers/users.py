@@ -1,6 +1,6 @@
 from flask_app import app
 from flask import Flask, render_template, request, redirect#, session
-from flask_app.models.user import User #from the models folder, we are importing our Animal class 
+from flask_app.models.user import User #from the models folder, we are importing our User class 
 
 @app.route("/")
 def groot():
